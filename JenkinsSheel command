@@ -1,0 +1,9 @@
+#building the image
+docker build -t todoapp:latest .
+#running the docker container from build image
+docker run -d --name djangotodo -p 8000:80 todoapp:latest
+#login to the docker hub for pushing the images
+docker login -u rasel009 -p ******* (we can manage credential by docker cloud)
+docker tag todoapp:latest rasel009/todoapp:latest
+#pushing the image to docker hub
+docker push rasel009/todoapp:latest
