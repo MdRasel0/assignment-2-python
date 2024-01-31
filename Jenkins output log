@@ -1,0 +1,308 @@
+Started by user Md. Rasel
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/assignment2
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/assignment2/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/MdRasel0/assignment-2-python.git # timeout=10
+Fetching upstream changes from https://github.com/MdRasel0/assignment-2-python.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/MdRasel0/assignment-2-python.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 97dcb900009d079594d7dc69997b76a53396e682 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 97dcb900009d079594d7dc69997b76a53396e682 # timeout=10
+Commit message: "first commit"
+ > git rev-list --no-walk 97dcb900009d079594d7dc69997b76a53396e682 # timeout=10
+[assignment2] $ /bin/sh -xe /tmp/jenkins10142282879411145635.sh
++ docker build -t todoapp:latest .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.09kB done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-slim
+#2 DONE 3.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.1s
+
+#4 [base 1/5] FROM docker.io/library/python:3.11-slim@sha256:d11b9bd5e49ea7401753d78f4d3b56f3aec952b85b49bcae88981f0452818e0b
+#4 resolve docker.io/library/python:3.11-slim@sha256:d11b9bd5e49ea7401753d78f4d3b56f3aec952b85b49bcae88981f0452818e0b 0.1s done
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 38.08kB 0.0s done
+#5 DONE 0.2s
+
+#4 [base 1/5] FROM docker.io/library/python:3.11-slim@sha256:d11b9bd5e49ea7401753d78f4d3b56f3aec952b85b49bcae88981f0452818e0b
+#4 sha256:d11b9bd5e49ea7401753d78f4d3b56f3aec952b85b49bcae88981f0452818e0b 1.65kB / 1.65kB done
+#4 sha256:9b394f5b91f048ac4121d64c69028178a7728ffed9f59fba27f62d4f6cc29f97 1.37kB / 1.37kB done
+#4 sha256:da34282a1612d67286f90455408c3364e3258c1cd9a87310759454a6dc91b479 6.93kB / 6.93kB done
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 0B / 29.13MB 0.2s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 0B / 3.51MB 0.2s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 0B / 12.84MB 0.2s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 3.15MB / 29.13MB 0.8s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 5.24MB / 29.13MB 1.1s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 7.22MB / 29.13MB 1.3s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 9.44MB / 29.13MB 1.7s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 12.58MB / 29.13MB 2.2s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 14.68MB / 29.13MB 2.5s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 16.78MB / 29.13MB 2.8s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 18.87MB / 29.13MB 3.5s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 20.97MB / 29.13MB 4.4s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 23.07MB / 29.13MB 4.9s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 1.05MB / 12.84MB 4.9s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 0B / 3.51MB 5.2s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 25.17MB / 29.13MB 5.3s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 1.05MB / 3.51MB 5.9s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 27.26MB / 29.13MB 6.2s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 2.10MB / 12.84MB 6.2s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 3.15MB / 12.84MB 7.0s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 29.13MB / 29.13MB 7.1s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 2.10MB / 3.51MB 7.3s
+#4 sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 29.13MB / 29.13MB 7.3s done
+#4 sha256:4ea8b799d366d7bb13576e6d6b209dd4a479293115188cc56306c171fbecfae5 0B / 244B 7.4s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 4.19MB / 12.84MB 7.5s
+#4 extracting sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 0.1s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 5.24MB / 12.84MB 8.1s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 3.15MB / 3.51MB 8.3s
+#4 sha256:4ea8b799d366d7bb13576e6d6b209dd4a479293115188cc56306c171fbecfae5 244B / 244B 8.1s done
+#4 sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 0B / 3.39MB 8.3s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 3.51MB / 3.51MB 8.4s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 6.29MB / 12.84MB 8.4s
+#4 sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 3.51MB / 3.51MB 8.4s done
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 7.34MB / 12.84MB 8.7s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 8.39MB / 12.84MB 9.0s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 9.44MB / 12.84MB 9.7s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 10.49MB / 12.84MB 10.0s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 11.53MB / 12.84MB 10.4s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 12.84MB / 12.84MB 11.1s
+#4 sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 12.84MB / 12.84MB 11.2s done
+#4 extracting sha256:2f44b7a888fa005d07c031d3cfad2a1c0344207def2ab9dbb97712425ff812c1 4.5s done
+#4 sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 1.05MB / 3.39MB 12.2s
+#4 extracting sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83
+#4 extracting sha256:3f00b3697662aa214d22bb76bbbf5fa4d80f7ba9ca9f9076a9440d53bf529b83 0.5s done
+#4 extracting sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8
+#4 sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 2.10MB / 3.39MB 13.2s
+#4 sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 3.39MB / 3.39MB 14.1s
+#4 sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 3.39MB / 3.39MB 14.1s done
+#4 extracting sha256:9f2fc8d8f9bd29bee019fdbb08e9bb9a9c094d04bbd0c4e4bc75dcf1e22a6fd8 1.6s done
+#4 extracting sha256:4ea8b799d366d7bb13576e6d6b209dd4a479293115188cc56306c171fbecfae5 done
+#4 extracting sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330
+#4 extracting sha256:d7d8cad868ee1551c1424fef0207a3067a5527fbd155377f46a39c27ad912330 0.7s done
+#4 DONE 15.7s
+
+#6 [base 2/5] RUN apt-get update &&     apt-get install -y --no-install-recommends curl &&     rm -rf /var/lib/apt/lists/*
+#6 1.032 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#6 1.321 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+#6 1.420 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#6 1.779 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8787 kB]
+#6 7.916 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [12.7 kB]
+#6 8.072 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [135 kB]
+#6 10.44 Fetched 9186 kB in 10s (946 kB/s)
+#6 10.44 Reading package lists...
+#6 12.79 Reading package lists...
+#6 14.93 Building dependency tree...
+#6 15.37 Reading state information...
+#6 15.94 The following additional packages will be installed:
+#6 15.95   libbrotli1 libcurl4 libldap-2.5-0 libnghttp2-14 libpsl5 librtmp1 libsasl2-2
+#6 15.95   libsasl2-modules-db libssh2-1
+#6 15.96 Recommended packages:
+#6 15.96   libldap-common publicsuffix libsasl2-modules
+#6 16.36 The following NEW packages will be installed:
+#6 16.38   curl libbrotli1 libcurl4 libldap-2.5-0 libnghttp2-14 libpsl5 librtmp1
+#6 16.39   libsasl2-2 libsasl2-modules-db libssh2-1
+#6 16.81 0 upgraded, 10 newly installed, 0 to remove and 2 not upgraded.
+#6 16.81 Need to get 1614 kB of archives.
+#6 16.81 After this operation, 3820 kB of additional disk space will be used.
+#6 16.81 Get:1 http://deb.debian.org/debian bookworm/main amd64 libbrotli1 amd64 1.0.9-2+b6 [275 kB]
+#6 17.14 Get:2 http://deb.debian.org/debian bookworm/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg-10 [20.3 kB]
+#6 17.15 Get:3 http://deb.debian.org/debian bookworm/main amd64 libsasl2-2 amd64 2.1.28+dfsg-10 [59.7 kB]
+#6 17.16 Get:4 http://deb.debian.org/debian bookworm/main amd64 libldap-2.5-0 amd64 2.5.13+dfsg-5 [183 kB]
+#6 17.19 Get:5 http://deb.debian.org/debian bookworm/main amd64 libnghttp2-14 amd64 1.52.0-1+deb12u1 [72.4 kB]
+#6 17.24 Get:6 http://deb.debian.org/debian bookworm/main amd64 libpsl5 amd64 0.21.2-1 [58.7 kB]
+#6 17.25 Get:7 http://deb.debian.org/debian bookworm/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2+b2 [60.8 kB]
+#6 17.25 Get:8 http://deb.debian.org/debian bookworm/main amd64 libssh2-1 amd64 1.10.0-3+b1 [179 kB]
+#6 17.27 Get:9 http://deb.debian.org/debian-security bookworm-security/main amd64 libcurl4 amd64 7.88.1-10+deb12u5 [390 kB]
+#6 17.33 Get:10 http://deb.debian.org/debian-security bookworm-security/main amd64 curl amd64 7.88.1-10+deb12u5 [315 kB]
+#6 18.20 debconf: delaying package configuration, since apt-utils is not installed
+#6 18.26 Fetched 1614 kB in 1s (1166 kB/s)
+#6 18.36 Selecting previously unselected package libbrotli1:amd64.
+#6 18.36 (Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 6705 files and directories currently installed.)
+#6 18.39 Preparing to unpack .../0-libbrotli1_1.0.9-2+b6_amd64.deb ...
+#6 18.42 Unpacking libbrotli1:amd64 (1.0.9-2+b6) ...
+#6 18.60 Selecting previously unselected package libsasl2-modules-db:amd64.
+#6 18.61 Preparing to unpack .../1-libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb ...
+#6 18.62 Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+#6 18.72 Selecting previously unselected package libsasl2-2:amd64.
+#6 18.73 Preparing to unpack .../2-libsasl2-2_2.1.28+dfsg-10_amd64.deb ...
+#6 18.74 Unpacking libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+#6 18.84 Selecting previously unselected package libldap-2.5-0:amd64.
+#6 18.85 Preparing to unpack .../3-libldap-2.5-0_2.5.13+dfsg-5_amd64.deb ...
+#6 18.86 Unpacking libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+#6 19.00 Selecting previously unselected package libnghttp2-14:amd64.
+#6 19.00 Preparing to unpack .../4-libnghttp2-14_1.52.0-1+deb12u1_amd64.deb ...
+#6 19.01 Unpacking libnghttp2-14:amd64 (1.52.0-1+deb12u1) ...
+#6 19.12 Selecting previously unselected package libpsl5:amd64.
+#6 19.13 Preparing to unpack .../5-libpsl5_0.21.2-1_amd64.deb ...
+#6 19.14 Unpacking libpsl5:amd64 (0.21.2-1) ...
+#6 19.24 Selecting previously unselected package librtmp1:amd64.
+#6 19.25 Preparing to unpack .../6-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb ...
+#6 19.26 Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#6 19.36 Selecting previously unselected package libssh2-1:amd64.
+#6 19.37 Preparing to unpack .../7-libssh2-1_1.10.0-3+b1_amd64.deb ...
+#6 19.38 Unpacking libssh2-1:amd64 (1.10.0-3+b1) ...
+#6 19.53 Selecting previously unselected package libcurl4:amd64.
+#6 19.53 Preparing to unpack .../8-libcurl4_7.88.1-10+deb12u5_amd64.deb ...
+#6 19.54 Unpacking libcurl4:amd64 (7.88.1-10+deb12u5) ...
+#6 19.70 Selecting previously unselected package curl.
+#6 19.70 Preparing to unpack .../9-curl_7.88.1-10+deb12u5_amd64.deb ...
+#6 19.71 Unpacking curl (7.88.1-10+deb12u5) ...
+#6 19.88 Setting up libpsl5:amd64 (0.21.2-1) ...
+#6 19.91 Setting up libbrotli1:amd64 (1.0.9-2+b6) ...
+#6 19.95 Setting up libnghttp2-14:amd64 (1.52.0-1+deb12u1) ...
+#6 19.98 Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg-10) ...
+#6 20.01 Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#6 20.04 Setting up libsasl2-2:amd64 (2.1.28+dfsg-10) ...
+#6 20.07 Setting up libssh2-1:amd64 (1.10.0-3+b1) ...
+#6 20.10 Setting up libldap-2.5-0:amd64 (2.5.13+dfsg-5) ...
+#6 20.14 Setting up libcurl4:amd64 (7.88.1-10+deb12u5) ...
+#6 20.17 Setting up curl (7.88.1-10+deb12u5) ...
+#6 20.20 Processing triggers for libc-bin (2.36-9+deb12u3) ...
+#6 DONE 20.5s
+
+#7 [base 3/5] WORKDIR /usr/local/app
+#7 DONE 0.6s
+
+#8 [base 4/5] COPY requirements.txt ./requirements.txt
+#8 DONE 0.2s
+
+#9 [base 5/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 6.701 Collecting Flask (from -r requirements.txt (line 1))
+#9 6.702   Obtaining dependency information for Flask from https://files.pythonhosted.org/packages/bd/0e/63738e88e981ae57c23bad6c499898314a1110a4141f77d7bd929b552fb4/flask-3.0.1-py3-none-any.whl.metadata
+#9 7.273   Downloading flask-3.0.1-py3-none-any.whl.metadata (3.6 kB)
+#9 7.594 Collecting Redis (from -r requirements.txt (line 2))
+#9 7.595   Obtaining dependency information for Redis from https://files.pythonhosted.org/packages/0b/34/a01250ac1fc9bf9161e07956d2d580413106ce02d5591470130a25c599e3/redis-5.0.1-py3-none-any.whl.metadata
+#9 7.693   Downloading redis-5.0.1-py3-none-any.whl.metadata (8.9 kB)
+#9 7.882 Collecting gunicorn (from -r requirements.txt (line 3))
+#9 7.884   Obtaining dependency information for gunicorn from https://files.pythonhosted.org/packages/0e/2a/c3a878eccb100ccddf45c50b6b8db8cf3301a6adede6e31d48e8531cab13/gunicorn-21.2.0-py3-none-any.whl.metadata
+#9 7.977   Downloading gunicorn-21.2.0-py3-none-any.whl.metadata (4.1 kB)
+#9 8.787 Collecting Werkzeug>=3.0.0 (from Flask->-r requirements.txt (line 1))
+#9 8.789   Obtaining dependency information for Werkzeug>=3.0.0 from https://files.pythonhosted.org/packages/c3/fc/254c3e9b5feb89ff5b9076a23218dafbc99c96ac5941e900b71206e6313b/werkzeug-3.0.1-py3-none-any.whl.metadata
+#9 8.883   Downloading werkzeug-3.0.1-py3-none-any.whl.metadata (4.1 kB)
+#9 9.159 Collecting Jinja2>=3.1.2 (from Flask->-r requirements.txt (line 1))
+#9 9.161   Obtaining dependency information for Jinja2>=3.1.2 from https://files.pythonhosted.org/packages/30/6d/6de6be2d02603ab56e72997708809e8a5b0fbfee080735109b40a3564843/Jinja2-3.1.3-py3-none-any.whl.metadata
+#9 9.257   Downloading Jinja2-3.1.3-py3-none-any.whl.metadata (3.3 kB)
+#9 9.398 Collecting itsdangerous>=2.1.2 (from Flask->-r requirements.txt (line 1))
+#9 9.504   Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+#9 9.761 Collecting click>=8.1.3 (from Flask->-r requirements.txt (line 1))
+#9 9.762   Obtaining dependency information for click>=8.1.3 from https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl.metadata
+#9 9.854   Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+#9 9.953 Collecting blinker>=1.6.2 (from Flask->-r requirements.txt (line 1))
+#9 9.955   Obtaining dependency information for blinker>=1.6.2 from https://files.pythonhosted.org/packages/fa/2a/7f3714cbc6356a0efec525ce7a0613d581072ed6eb53eb7b9754f33db807/blinker-1.7.0-py3-none-any.whl.metadata
+#9 10.05   Downloading blinker-1.7.0-py3-none-any.whl.metadata (1.9 kB)
+#9 10.26 Collecting packaging (from gunicorn->-r requirements.txt (line 3))
+#9 10.26   Obtaining dependency information for packaging from https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl.metadata
+#9 10.36   Downloading packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+#9 11.20 Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask->-r requirements.txt (line 1))
+#9 11.20   Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/d3/0a/c6dfffacc5a9a17c97019cb7cbec67e5abfb65c59a58ecba270fa224f88d/MarkupSafe-2.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+#9 11.30   Downloading MarkupSafe-2.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+#9 11.43 Downloading flask-3.0.1-py3-none-any.whl (101 kB)
+#9 11.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.2/101.2 kB 772.1 kB/s eta 0:00:00
+#9 11.66 Downloading redis-5.0.1-py3-none-any.whl (250 kB)
+#9 11.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 250.3/250.3 kB 2.2 MB/s eta 0:00:00
+#9 11.88 Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+#9 11.89    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 11.9 MB/s eta 0:00:00
+#9 12.01 Downloading blinker-1.7.0-py3-none-any.whl (13 kB)
+#9 12.12 Downloading click-8.1.7-py3-none-any.whl (97 kB)
+#9 12.16    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 17.7 MB/s eta 0:00:00
+#9 12.25 Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+#9 12.28    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 7.0 MB/s eta 0:00:00
+#9 12.37 Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+#9 12.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 5.8 MB/s eta 0:00:00
+#9 12.52 Downloading packaging-23.2-py3-none-any.whl (53 kB)
+#9 12.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.0/53.0 kB 57.6 MB/s eta 0:00:00
+#9 12.65 Downloading MarkupSafe-2.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+#9 13.03 Installing collected packages: Redis, packaging, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, gunicorn, Flask
+#9 15.31 Successfully installed Flask-3.0.1 Jinja2-3.1.3 MarkupSafe-2.1.4 Redis-5.0.1 Werkzeug-3.0.1 blinker-1.7.0 click-8.1.7 gunicorn-21.2.0 itsdangerous-2.1.2 packaging-23.2
+#9 15.31 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#9 16.09 
+#9 16.09 [notice] A new release of pip is available: 23.2.1 -> 23.3.2
+#9 16.09 [notice] To update, run: pip install --upgrade pip
+#9 DONE 16.5s
+
+#10 [final 1/1] COPY . .
+#10 DONE 0.3s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.7s done
+#11 writing image sha256:450247bd463be368ce9ab9b3381f0496091aa604497ebdec5de26d312289b5f0
+#11 writing image sha256:450247bd463be368ce9ab9b3381f0496091aa604497ebdec5de26d312289b5f0 done
+#11 naming to docker.io/library/todoapp:latest 0.0s done
+#11 DONE 0.8s
++ docker run -d --name djangotodo -p 8000:80 todoapp:latest
+f07631d9ab8ca617e55d1c550452d2d4e5f1a72af9dcade0959a11a4f09b89ad
++ docker login -u rasel009 -p Rasel009!
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /var/lib/jenkins/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
++ docker tag todoapp:latest rasel009/todoapp:latest
++ docker push rasel009/todoapp:latest
+The push refers to repository [docker.io/rasel009/todoapp]
+4e3be9498432: Preparing
+30398a73e7ee: Preparing
+1ef13c818588: Preparing
+c944ef483a4c: Preparing
+1d8b6b2af5f5: Preparing
+0b61847d9826: Preparing
+2655468a1a9f: Preparing
+4b58789a003f: Preparing
+e96fe707bd25: Preparing
+571ade696b26: Preparing
+0b61847d9826: Waiting
+2655468a1a9f: Waiting
+4b58789a003f: Waiting
+e96fe707bd25: Waiting
+571ade696b26: Waiting
+1ef13c818588: Pushed
+c944ef483a4c: Pushed
+4e3be9498432: Pushed
+2655468a1a9f: Mounted from library/python
+0b61847d9826: Mounted from library/python
+4b58789a003f: Mounted from library/python
+1d8b6b2af5f5: Pushed
+571ade696b26: Mounted from library/python
+30398a73e7ee: Pushed
+e96fe707bd25: Mounted from library/python
+latest: digest: sha256:3f9b008ec7f4cb9cf82a9c6adf0995f2c664165eb57cf9f9269aacda0ed699ec size: 2415
+Finished: SUCCESS
