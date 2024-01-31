@@ -7,26 +7,8 @@ Step 2:
 
 Step 3:
 
-make a freestyle project on Jenkins and put mark sorce code manager as git. After that on build step -> select execute shell(as we are going to execute the command on sheel) -> put the command to run on shell.
+make a freestyle project on Jenkins and put mark sorce code manager as git. After that on build step -> select execute shell(as we are going to execute the command on sheel) -> put the command to run on shell. 
 
-=============================================================
-#building the image
-docker build -t todoapp:latest .
-#running the docker container from build image
-docker run -d --name djangotodo -p 8000:80 todoapp:latest
-#login to the docker hub for pushing the images
-
-docker login -u rasel009 -p ******* (we can manage credential by docker cloud)
-
-# tagging the image
-
-docker tag todoapp:latest rasel009/todoapp:latest
-
-#pushing the image to docker hub
-
-docker push rasel009/todoapp:latest 
-
-==============================================================
 **Note: I give Jenkins user to use docker without sudo.**
 
 Build Output:  
